@@ -6,7 +6,7 @@ class Arrow:
         vs = [(-80, 0), (0, 2), (2, 0), (0, -2)]
         self.body = pymunk.Body(body_type=pymunk.Body.KINEMATIC)
         self.shape = pymunk.Poly(self.body, vs)
-        self.shape.collision_type = 1 # Add this line
+        self.shape.collision_type = 1
         self.shape.density = 0.1
         self.body.position = x,y
         space.add(self.body, self.shape)
